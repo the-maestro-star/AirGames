@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+{%block title%}Home{%endblock%}
+{%block stylesheet%}<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='index.css') }}">
+{%endblock%}
+
+
+{%block content%}
+<div class = 'flex-container'>
+    
+    <a href = 'url_for("home.index")'>Home</a>
+    <a href = 'url_for("home.index")'>Games</a>
+</div>
+
+<h1>
+    Welcome
+</h1>
+<h2>Prepare to Be Amazed</h2>
+{%endblock%}
+
+
