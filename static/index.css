@@ -43,15 +43,26 @@ body {
 }
 
 h1{
-    margin-top: 90px;
+    margin-top: 150px;
     font-family:'Barlow Condensed', sans-serif; 
     text-shadow: 1px 1px black;
     color: white;
     margin-left:5px;
+    text-align: center;
 }
 h2{
     
     font-family:'Barlow Condensed', sans-serif; 
     text-shadow: 1px 1px black;
     color: white;
+    text-align: center;
 }
+.block {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }

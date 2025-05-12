@@ -1,4 +1,4 @@
-from flask import Flask ,render_template, request, url_for,Blueprint
+from flask import request, render_template, redirect, url_for, Blueprint
 home = Blueprint('home',__name__,template_folder = 'templates' )
 
 @home.route('/')
