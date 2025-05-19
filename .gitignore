@@ -1,29 +1,16 @@
-# Virtual environments
 .venv/
 venv/
 ENV/
-
-# Python cache and compiled files
 __pycache__/
 *.py[cod]
 *.so
 *.egg-info/
 dist/
 build/
-
-# Environment variables
 .env
 .env.local
-
-# IDE-specific files
 .vscode/
 .idea/
-
-# System files
-.DS_Store (Mac)
-Thumbs.db (Windows)
-
-# Large data/files (optional)
 *.zip
 *.dat
 *.log.venv/
