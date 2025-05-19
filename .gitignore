@@ -26,4 +26,4 @@ Thumbs.db (Windows)
 # Large data/files (optional)
 *.zip
 *.dat
-*.log
+*.log.venv/
