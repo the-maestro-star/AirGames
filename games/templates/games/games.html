@@ -1,0 +1,26 @@
+{%extends "base.html"%}
+{%block title%}Games{%endblock%}
+{%block stylesheet%}<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='games.css') }}">
+{%endblock%}
+
+{%block content%}
+<div class = 'flex-container'>
+    
+    <a href ='{{url_for("home.index")}}'> Home</a>
+    <a href ='{{url_for("games.index")}}' >Games</a>
+    <a href ='{{url_for("games.index")}}' >About</a>
+</div>
+<h1 style=" text-align: center;"> Games</h1>
+<div class = 'game-container'>
+    <div>
+        <a href ='{{url_for("rock_paper_scissors.index")}}'>Rock Paper Scissors</a> 
+    </div>
+
+    <div> 
+        <a href ='{{url_for("home.index")}}'>Piano Tiles</a> 
+    </div>
+</div>
+
+{%endblock%}
+
+
