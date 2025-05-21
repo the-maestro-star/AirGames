@@ -31,13 +31,18 @@
             <div id="computer-score" class="score">0</div>
         </div>
     </div>
+    <div class = 'choose-score' >Choose Winning Score Below</div>
+    <span><button class = 'round-button' id='10'>10</button><button class="round-button" id = '15'>15</button><button class = 'round-button' id = '20'>20</button></span>
     <button class="play-game" id="play-game">
     Let's Play!
     </button>
+    <button class = 'play-game' id = 'reset'>Reset</button>
 </div>
+<div id = 'countdown'></div>
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script src="/static/rps.js"></script>
 
 {%endblock%}

@@ -13,6 +13,7 @@ def create_app():
     from rock_paper_scissors.routes import rock_paper_scissors
     app.register_blueprint(rock_paper_scissors,url_prefix = '/rock_paper_scissors')
     return app
+
 def detect_gesture(image):
     #Initializing mediapipe hand model
     mp_hands = mp.solutions.hands
