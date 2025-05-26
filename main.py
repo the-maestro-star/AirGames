@@ -1,8 +1,6 @@
 from flask import Flask 
 import cv2
 import mediapipe as mp
-import random
-from time import time
 
 def create_app():
     app = Flask(__name__, template_folder = 'templates')

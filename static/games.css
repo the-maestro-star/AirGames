@@ -15,12 +15,11 @@ body {
     width: 100%; 
     padding: 10px; 
     background-color: transparent; 
-   
     justify-content: flex-end; 
     gap: 20px;
     z-index: 1000; 
     padding:10px;
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .flex-container a {
@@ -38,9 +37,7 @@ body {
     cursor: pointer;
     background-color: rgba(210, 206, 206, 0.5);
 }
-.flex-container a:current{
-    background-color: green;
-}
+
 
 h1{
     margin-top: 90px;

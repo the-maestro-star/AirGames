@@ -1,7 +1,6 @@
 from flask import request, render_template, redirect, url_for, Blueprint,jsonify
 import random
 import base64
-from time import time
 import numpy as np
 import cv2
 from main import detect_gesture
@@ -15,12 +14,13 @@ def index():
 
 @rock_paper_scissors.route('/analyze', methods=['GET','POST'])
 def analyze():
-    image_data = request.json['image'].split(',')[1]
-    nparr = np.frombuffer(base64.b64decode(image_data), np.uint8)
-    img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+    image_data = request.json['image'].split(',')[1] #Get image data
+    nparr = np.frombuffer(base64.b64decode(image_data), np.uint8) #Decodes String
+    img = cv2.imdecode(nparr, cv2.IMREAD_COLOR) #Convert image data to image
     gesture = detect_gesture(img)
     return jsonify({'gesture': gesture})
 
+#Get Computer Choice
 @rock_paper_scissors.route('/get_computer_choice',methods= ['GET','POST'])
 def get_computer_choice():
     return jsonify({'choice': random.choice(['rock', 'paper', 'scissors'])})

@@ -2,21 +2,36 @@
 {%block title%}Rock Paper Scissors{%endblock%}
 {%block stylesheet%}
 <link rel="stylesheet" href="/static/rps.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 {%endblock%}
 {%block content%}
+<!--Navigation Bar-->
 <div class = 'flex-container'>
     <a href = '{{url_for("home.index")}}'>Home</a>
-    <a href = '{{url_for("games.index")}}'>Games</a>
-    <a href = '{{url_for("games.index")}}'>About</a>
+    <a href = '{{url_for("games.index")}}'><i class="fas fa-gamepad"></i> Games</a>
+    <a href = '{{url_for("home.about")}}'>About</a>
 </div>
 
+<!--Video Feed-->
 <div class = 'video-container'> 
     <video id="video" autoplay playsinline></video>
 </div>
 
-<canvas id='canvas'></canvas>
-<p id = 'result'></p>
-<p id = 'computer-result'></p>
+<!--User and Computer Moves-->
+<div class = 'image-container'>
+    <div class = 'displayer'>
+        <p>You</p>
+        <img class = 'user-image' id = 'user-image'>
+    </div>
+    <p>Versus</p>
+    <div class = 'displayer'>
+        <p>Computer</p>
+        <img class = 'computer-image' id = 'computer-image'>
+    </div>
+</div>
+
+<!--Element to Flash Winner-->
+<div id = 'winner'></div>
 
 <!--Scoreboard--> 
 <div class="scoreboard">
@@ -33,15 +48,16 @@
     </div>
     <div class = 'choose-score' >Choose Winning Score Below</div>
     <span><button class = 'round-button' id='10'>10</button><button class="round-button" id = '15'>15</button><button class = 'round-button' id = '20'>20</button></span>
-    <button class="play-game" id="play-game">
-    Let's Play!
-    </button>
-    <button class = 'play-game' id = 'reset'>Reset</button>
+    <button class="play-game-button" id="play-game">Play/Resume</button>
+    <button class="play-game-button" id="pause-game">Pause</button>
+    <button class ='play-game-button' id ='reset'>Reset</button>
 </div>
+
+<!--Countdown Element-->
 <div id = 'countdown'></div>
 
 
-
+<!--Confetti-->
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script src="/static/rps.js"></script>
 
