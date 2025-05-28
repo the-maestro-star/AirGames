@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 countdownEl.textContent = "Computer Wins!"// Flash 'Computer Wins' on the webpage
             }
             // Reset when there is a winner or loser
-            resetEndGame();
+            endGame();
         }
     }
 
@@ -179,14 +179,9 @@ document.addEventListener('DOMContentLoaded', () => {
             intervalId = null;
         }
     }
-    // Reset Game but not clear scores(for end of game)
-    function resetEndGame() {
+    // End Game but not clear scores(for end of game)
+    function endGame() {
         isGameActive = false;
-        user_image.src = transparent;
-        user_image.alt = '';
-        computer_image.src = transparent;
-        computer_image.alt = '';
-        
         if (intervalId !== null) {
             clearInterval(intervalId);
             intervalId = null;
