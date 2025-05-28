@@ -1,0 +1,68 @@
+body {
+    background-image: url("/static/low-poly-grid-haikei.svg");
+    margin: 0; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.flex-container {
+    display: flex;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    padding: 10px; 
+    background-color: transparent; 
+    justify-content: flex-end; 
+    gap: 20px;
+    z-index: 1000; 
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.flex-container a {
+    text-decoration: none;
+    padding: 1.2rem;
+    background-color: transparent; 
+    border-radius: 30px;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-shadow: 1px 1px black;
+    transition: background-color 0.3s; 
+}
+
+.flex-container a:hover {
+    cursor: pointer;
+    background-color: rgba(210, 206, 206, 0.5);
+}
+
+
+h1, h2, h3,h4{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 1.5rem;
+    text-shadow: 1px 1px black;
+}
+ul {
+    list-style-type: square;
+    padding-left: 2rem;
+}
+ li {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.about-container {
+    position:relative;
+    max-width: 900px;
+    margin-top: 90px;
+    padding: 1rem;
+    background-color: rgb(65, 63, 63);
+    border-radius: 20px;
+    margin-left: 17%;
+}

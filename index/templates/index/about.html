@@ -1,0 +1,29 @@
+{%extends "base.html"%}
+{%block title%}About{%endblock%}
+{%block stylesheet%}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='about.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+{%endblock%}
+{%block content%}
+<div class = 'flex-container'>
+    <a href = '{{url_for("home.index")}}'>Home</a>
+    <a href = '{{url_for("games.index")}}'><i class="fas fa-gamepad"></i> Games</a>
+    <a href = '{{url_for("home.about")}}'>About</a>
+</div>
+<div class="about-container">
+    <h2>About the Project</h2>
+    <h3>Rock-Paper-Scissors AI Game is an interactive web application that lets users play the classic hand game against a computer using real-time gesture recognition via webcam. Built with modern web technologies and powered by machine learning, this project captures your hand gestures using your device's camera, analyzes them, and instantly pits them against the computer's move.</h3>
+
+    <h3>Key features include:</h3>
+    <ul>
+        <li>Camera-Based Gesture Detection - Detects your hand signs using live video input.</li>
+        <li>AI-Powered Gameplay - Uses a trained model to recognize rock, paper, or scissors.</li>
+        <li>Animated Countdown - Builds excitement with a rock, paper, scissors, shoot before each round.</li>
+        <li>Visual Feedback - Shows your hand gesture as an image overlay for clarity.</li>
+        <li>Confetti Celebrations - Win a round? Celebrate with colorful confetti!</li>
+        <li>Custom Round Limits - Choose your winning score: 10, 15, or 20</li>
+    </ul>
+
+    <h4>This project blends computer vision with intuitive user interaction and was built to explore the intersection of machine learning, game design, and web development.</h4>
+</div>
+{%endblock%}
