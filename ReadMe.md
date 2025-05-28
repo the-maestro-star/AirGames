@@ -1,6 +1,6 @@
 # Rock Paper Scissors Game (Camera-Based) ✊✋✌️
 
-![Game Screenshot](assets\game-screenshot.png)
+![Game Screenshot](https://github.com/the-maestro-star/Rock_Paper_Scissors/blob/Main/assets/game-screenshot.png?raw=true)
 
 ## 🖥️Tech Stack
 
