@@ -25,7 +25,6 @@
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/the-maestro-star/Rock_Paper_Scissors.git
-   cd rpsAI
 
 2. **Set Up Virtual Environment**:
     ```bash
