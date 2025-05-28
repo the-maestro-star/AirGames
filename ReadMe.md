@@ -68,7 +68,7 @@
 7. The Computer Will Respond Automatically
 
 8. First To Reach Target Score Wins
-![Game Screenshot](assets\game-screenshot2.png)
+![Game Screenshot](https://github.com/the-maestro-star/Rock_Paper_Scissors/blob/Main/assets/game-screenshot2.png?raw=true)
 
 ## 🚀Tips for Best Performance
 - Use in a well-lit room (but avoid direct bright light)
