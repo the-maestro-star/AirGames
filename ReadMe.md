@@ -84,7 +84,7 @@
 - If you win, enjoy a 🎉 confetti blast to celebrate!
 
 ## 🥳 Enjoy the Game!
-- We hope you have fun playing the Rock-Paper-Scissors Gesture Game. Feel free to contribute, report bugs, or suggest improvements!
+- Hope you have fun playing the Rock-Paper-Scissors Gesture Game. Feel free to contribute, report bugs, or suggest improvements!
 
 
    
